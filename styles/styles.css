@@ -1,0 +1,735 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    /* padding: 0;
+    margin: 0; */
+    box-sizing: border-box;
+    
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../background/namesnack-nombres-para-tiendas-de-instrumentos-musicales-3869x2501-2021121.png);
+    background-attachment: fixed;
+}
+
+.textContent{
+    font-size: 1.4em;
+    font-weight: bold;
+    text-align: center;
+    background-color: rgba(173, 173, 177, 0.8);
+    padding: 8px;
+}
+/* Propiedades para la nav */
+/* nav{
+    background-color: rgb(125, 125, 128);
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+*/ 
+/* .logo{
+        height: auto;
+} */
+
+/*
+nav ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+    
+    .content{
+    list-style: none;
+    margin:0 10px;
+    padding-bottom: 10px;
+    font-size: 1.8em;
+    font-weight: 700;
+    }
+    
+    nav li:hover{
+        background-color:rgb(12, 12, 12, 0.5);
+    }
+
+    nav li a{
+    text-decoration: none;
+    }
+
+    li a:visited{
+        color:rgb(223, 222, 222);
+    }
+
+    nav ul form input{
+        height: 30px;
+    }
+    nav button{
+        margin: 10px 5px;
+        padding: 5px;
+        border-radius: 15%;
+        border: none;
+        cursor: pointer;
+    }
+
+    nav svg{
+        fill: rgb(238, 62, 62);
+        width: 2em;
+        height: 1.5em;
+    }*/
+
+nav{
+    background:rgb(125, 125, 128);
+}
+
+nav ul li{
+    font-size: 1.8em;
+}
+
+nav ul li a:hover{
+    background-color: rgba(49, 49, 49, 0.5);
+    border-radius: 5px;
+    color: rgb(223, 222, 222);
+}
+/* Proiedades para la imagen de header */
+.img-header{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+/* Carousel */
+
+.color-slide{
+    background-color: rgb(0, 0, 0)
+}
+/* .carousel{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(125, 125, 128, 0.5);
+}
+    
+    .carousel-item{
+        width: 20em;
+        height: 20em;
+        margin: 1em;
+    }
+        .img-carousel{
+            display: flex;
+            flex-flow: row;
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        } */
+
+/* Main */
+.articulos-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background: rgb(223, 222, 222);
+}
+
+div .destacados{
+        margin: 0;
+        text-align: center;
+        padding: 20px;
+        font-size: 3em;
+        color: rgb(90, 14, 14);
+        font-weight: bolder;
+    }
+
+    .articulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: 50%;
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        
+    }
+
+    .descripcion-articulo , .precio-articulo {
+        padding-bottom: 10px ;
+        font-size: 2em;
+        font-weight: 500;
+        text-align: center;
+    }
+
+    .img-articulo{
+        width: 50%;
+    }
+    
+    .btn-bg{
+        background-color: rgb(49, 49, 49);
+        color: white;
+    }
+    
+    .btn-bg:hover{
+        background-color: rgb(125, 125, 128);
+        color: white;
+    }
+    /* Propiedades del footer */
+    footer{
+        background-color: rgb(125, 125, 128);
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    footer svg{
+        height: 5%;
+        width: 5%;
+        margin: 0 10px;
+        padding-right: 8px;
+
+    }
+
+    .footer-link{
+        margin: 0 10px;
+        font-size: 1.6em;
+        line-height: 1.8em;
+    }
+
+    /* TIENDA DE PRODUCTOS */
+
+.actions{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 1em;
+}
+
+    .actions button{
+        margin:0 10px;
+        padding: 6px;
+        border: none;
+        border-radius: 15%;    
+        height: 40px;
+        width: 40px;
+        background-color: rgb(125, 125, 128);    
+    }
+
+    .actions input{
+        border: none;
+        border-radius: 8px;
+    }
+
+    .actions button svg{
+        fill: rgb(235, 235, 235);
+    }
+
+    /* ACTIONS ENDS */
+.filter{
+    background-color: rgb(125, 125, 128, 0.5);
+    margin: 0 30px;
+    padding-left: 10px;
+    
+}
+
+    .filter ul li{
+        list-style: none;
+        font-size: 1.6em;
+        margin-left: 10px;
+    }
+
+    .filter p{
+        font-size: 2em;
+        font-weight: bold;
+        margin-bottom: 10px;
+        letter-spacing: 2px;
+    }
+
+    /* FILTERS END */
+
+.tienda{
+    display: grid;
+    grid-template-columns: 30% repeat(2, 1fr);
+    grid-template-rows: 8em repeat(5, 300px);
+    gap: 8px;
+    grid-template-areas: 
+    "actions actions actions"
+    "filter prod1 prod2"
+    "filter prod3 prod4"
+    "filter prod5 prod6"
+    "filter prod7 prod8"
+    "filter prod9 prod10"
+
+
+}
+
+.tienda .actions{
+    grid-area: actions;
+}
+
+.tienda .filter{
+    grid-area: filter;
+}
+.section-bg{
+    background-color: transparent;
+}
+
+    .tienda .producto1 div,
+    .tienda .producto2 div,
+    .tienda .producto3 div,
+    .tienda .producto4 div,
+    .tienda .producto5 div,
+    .tienda .producto6 div,
+    .tienda .producto7 div,
+    .tienda .producto8 div,
+    .tienda .producto9 div,
+    .tienda .producto10 div{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: flex-end;
+        align-items: center;
+        width: 90%;
+    }
+
+        .tienda .producto1 .descripcion,
+        .tienda .producto2 .descripcion,
+        .tienda .producto3 .descripcion,
+        .tienda .producto4 .descripcion,
+        .tienda .producto5 .descripcion,
+        .tienda .producto6 .descripcion,
+        .tienda .producto7 .descripcion,
+        .tienda .producto8 .descripcion,
+        .tienda .producto9 .descripcion,
+        .tienda .producto10 .descripcion{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .tienda .producto1 div p,
+    .tienda .producto2 div p,
+    .tienda .producto3 div p,
+    .tienda .producto4 div p,
+    .tienda .producto5 div p,
+    .tienda .producto6 div p,
+    .tienda .producto7 div p,
+    .tienda .producto8 div p,
+    .tienda .producto9 div p,
+    .tienda .producto10 div p{
+        font-size: 1.4em;
+        font-weight: bold;
+        padding-left: .5em;
+    }
+
+    /* PRODUCTOS ENDS */
+
+.nosotros{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nosotros .title{
+    font-size: 2.8em;
+    color: rgb(197, 12, 12);
+    font-weight: 700;
+    margin-left: 2em;
+    padding-right: 1em;
+}
+
+.nosotros .subtitle{
+    font-size: 1.8em;
+    margin-left: 3em;
+    padding-right: 1em;
+}
+
+.nosotros .presentacion{
+    font-size: 1.6em;
+    font-weight: 580;
+    padding: 6em;
+    margin: 0 5em;
+}
+
+    /* QUIENES SOMOS ENDS */
+
+main .how-to-buy{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.how-to-buy h1,
+.how-to-buy p{
+    font-size: 2em;
+    line-height: 2em
+}
+
+.pasos-a-seguir{
+    display: flex;
+    justify-content: space-around; 
+}
+
+.pasos-a-seguir div{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+}
+
+.pasos-a-seguir div svg{
+    width: 48%;
+    height: 48%;
+    fill: rgb(56, 49, 49);
+}
+
+.pregunta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq-item{
+    font-size: 2.4em;
+    font-weight: bold;
+    padding: .5em;
+}
+
+.faq-item svg{
+    position: relative;
+    left: 16%;
+}
+
+.faq-item-content{
+    font-size: 1.8em;
+    text-align: center;
+    margin: .8em;
+    padding: .5em;
+}
+
+    /* FAQs ENDS */
+
+div h1{
+    margin-left: 1em;
+    padding-top: .5em;
+    font-size: 3em;
+    font-weight: 700;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+div h2{
+    margin-left: 1.2em;
+    padding: .5em;
+    font-size: 2.6em;
+    font-weight: 700;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    grid-template-areas: 
+    "nombre apellido telefono"
+    "email provincia localidad";
+}
+
+.grid-position{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+
+}
+
+.grid-item1{
+    grid-area: nombre;
+}
+
+.grid-item2{
+    grid-area: apellido;
+}
+
+.grid-item3{
+    grid-area: telefono;
+}
+
+.grid-item4{
+    grid-area: email;
+}
+
+.grid-item5{
+    grid-area: provincia;
+}
+
+.grid-item6{
+    grid-area: localidad;
+}
+
+.datos-producto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3,1fr);
+    grid-template-areas: 
+    "marca modelo map"
+    "motivo mensaje map"
+    "enviar cancelar map";
+    gap: 10px;
+}
+
+.datos-producto1{
+    grid-area: marca;
+}
+
+.datos-producto2{
+    grid-area: modelo;
+}
+
+.datos-producto3{
+    grid-area: motivo;
+}
+
+.datos-producto4{
+    grid-area: mensaje;
+}
+
+.datos-producto5{
+    grid-area: enviar;
+}
+
+.datos-producto6{
+    grid-area: cancelar;
+}
+
+.map{
+    grid-area: map;
+    width: 76%;
+    height: 100%;
+    margin-bottom: 10em;
+    padding-bottom: 3em;
+}
+.grid-item{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input{
+    width: 30%;
+    color: rgb(49, 49, 49);
+    font-size: 1.2em;
+}
+label{
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-bottom: 5px;
+}
+
+input, textarea{
+    padding: 5px;
+    width: 20em;
+    border: 1px solid rgb(219, 219, 219);
+    border-radius: 3px;
+    margin-bottom: 10px;
+    overflow: visible;
+    color: rgb(49, 49, 49);
+    font-size: 1.2em;
+}
+
+input{
+    padding: 10px;
+    background-color: rgb(219, 219, 219);
+    border: none;
+    border-radius: 3px;
+}
+
+
+div select{
+    border: none;
+    border-radius: 3px;
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+    /* RESPONSIVE */
+
+@media (width < 880px){
+    nav{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 16em;
+    }
+
+    nav form input{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+        margin: 0;
+        
+    }
+
+    .articulos-content{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .articulo button{
+        width: 40%;
+    }
+
+    /* INDEX ENDS */
+
+    .filter{
+        display: none;
+    }
+
+    .actions input{
+        display: none;
+    }
+ 
+    .tienda{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "actions"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6"
+        "prod7"
+        "prod8"
+        "prod9"
+        "prod10";
+        gap: 1em;
+    }
+
+    .tienda section{
+        padding-bottom: 1.6em;
+    }
+
+    .tienda .producto1 div p,
+    .tienda .producto2 div p,
+    .tienda .producto3 div p,
+    .tienda .producto4 div p,
+    .tienda .producto5 div p,
+    .tienda .producto6 div p,
+    .tienda .producto7 div p,
+    .tienda .producto8 div p,
+    .tienda .producto9 div p,
+    .tienda .producto10 div p{
+        padding-right: 1em;
+        line-height: 2em;
+        font-size: 1.6em;
+    }
+
+    .img-producto{
+        width: 18%
+    }
+
+    /* TIENDA END */
+
+    .nosotros{
+        flex-direction: column;
+    }
+    
+    .nosotros section .title{
+        font-size: 3.4em;
+        text-align: center;
+        padding-bottom: .4em;
+    }
+
+    .nosotros section .subtitle{
+        font-size: 2.4em;
+        text-align: center;
+    }
+
+    .nosotros section .presentacion{
+        padding: 1.6em;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    /* QUIENES SOMOS END */
+
+    .pasos-a-seguir{
+        flex-direction: column;
+    }
+
+    .pasos-a-seguir div{
+        padding-bottom: 1.4em;
+    }
+    .pasos-a-seguir div svg{
+        width: 20%;
+        height: 20%;
+    }
+
+    .pasos-a-seguir div .select,
+    .pasos-a-seguir div .pago,
+    .pasos-a-seguir div .envio{
+        font-size: 2em;
+    }
+
+    .pasos-a-seguir div .info-extra{
+        font-size: 1.4em;
+    }
+
+    /* FAQS END */
+
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "nombre"
+        "apellido"
+        "telefono"
+        "email"
+        "provincia"
+        "localidad";
+    }
+
+    .grid-position{
+        padding-left: 2em;
+    }
+
+    .grid-item input[placeholder="Marca del producto"],
+    .grid-item input[placeholder="Modelo del producto"]{
+        width: 14em;
+    }
+    .grid-item select{
+        width: 14em;
+    }
+
+    .grid-item input{
+        width: 10em;
+    }
+}
+
+@media (width < 725px){
+    nav button{
+        display: none;
+    }
+
+    .img-articulo{
+        width: 70%;
+    }
+}
