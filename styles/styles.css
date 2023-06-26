@@ -203,7 +203,11 @@ div .destacados{
     grid-area: filter;
 }
 .section-bg{
-    background-color: transparent;
+    background-color: rgba(56, 49, 49, .2);
+}
+.section-bg:hover{
+    background-color: rgba(49, 49, 49, 0.3);
+    box-shadow: 3px 1px 4px;
 }
 
     .tienda .producto1 div,
@@ -406,12 +410,12 @@ div h2{
 
 .datos-producto{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3,1fr);
     grid-template-areas: 
-    "marca modelo map"
-    "motivo mensaje map"
-    "enviar cancelar map";
+    "marca modelo"
+    "motivo mensaje"
+    "enviar cancelar";
     gap: 10px;
 }
 
@@ -440,11 +444,11 @@ div h2{
 }
 
 .map{
-    grid-area: map;
-    width: 76%;
-    height: 100%;
-    margin-bottom: 10em;
-    padding-bottom: 3em;
+    display: block;
+    width: 80%;
+    height: 24em;
+    margin: 3em auto;
+    
 }
 .grid-item{
     display: flex;
@@ -485,7 +489,7 @@ input{
 div select{
     border: none;
     border-radius: 3px;
-    width: 50%;
+    width: 30%;
     height: 50%;
     text-align: center;
     font-size: 1.2em;
@@ -493,6 +497,21 @@ div select{
 
     /* RESPONSIVE */
 
+@media (width < 1000px){
+    .tienda{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 8em repeat(5, 300px);
+    gap: 8px;
+    grid-template-areas: 
+    "actions actions"
+    "prod1 prod2"
+    "prod3 prod4"
+    "prod5 prod6"
+    "prod7 prod8"
+    "prod9 prod10"
+    }
+}
+    
 @media (width > 880px){
     footer svg{
         width: 6%;
@@ -501,6 +520,10 @@ div select{
 @media (width < 880px){
     nav form input{
         display: none;
+    }
+
+    .navbar-collapse{
+        background-color: rgb(123, 123, 128);
     }
 
     .logo{
@@ -563,10 +586,6 @@ div select{
         padding-right: 1em;
         line-height: 2em;
         font-size: 1.6em;
-    }
-
-    .img-producto{
-        width: 18%
     }
 
     /* TIENDA END */
@@ -661,5 +680,18 @@ div select{
     .descripcion-articulo{
         font-size: 1.4em;
         font-weight: bold;
+    }
+/* INDEX ENDS */
+
+    .datos-producto{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 100px);
+        grid-template-areas: 
+        "marca"
+        "modelo"
+        "motivo"
+        "mensaje"
+        "enviar"
+        "cancelar"
     }
 }
