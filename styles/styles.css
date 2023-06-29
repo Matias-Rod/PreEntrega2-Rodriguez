@@ -39,6 +39,10 @@ nav ul li a:hover{
     border-radius: 5px;
 }
 
+.navbar-toggler{
+    border: 2px rgb(34, 34, 34) solid;
+}
+
 /* Proiedades para la imagen de header */
 .img-header{
     padding: 0;
@@ -323,29 +327,54 @@ main .how-to-buy{
     fill: rgb(56, 49, 49);
 }
 
-.pregunta{
+.accordion{
+    height: 50vh;
+    background-color: rgba(100, 99, 99, .5);
+    border-radius: 5px;
+}
+
+.accordion-item{
+    background-color: rgba(49, 49, 49, .5);
+}
+
+.accordion-header{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 30em;
+    height: 3em;
+    background-color: rgba(49, 49, 49, .5);
+}
+.accordion-button{
+    font-size: 0.6em;
+background-color: rgba(49, 49, 49, .5);
+color: rgb(213, 213, 230);
 }
 
-.faq-item{
-    font-size: 2.4em;
-    font-weight: bold;
-    padding: .5em;
-}
-
-.faq-item svg{
-    position: relative;
-    left: 16%;
-}
-
-.faq-item-content{
-    font-size: 1.8em;
+.accordion-button:first-of-type{
     text-align: center;
-    margin: .8em;
-    padding: .5em;
+}
+
+.accordion-button:focus{
+    background-color: rgba(49, 49, 49, .5);
+    color: rgb(213, 213, 230);
+}
+
+.accordion-button:not(:focus){
+    background-color: rgba(49, 49, 49, .5);
+}
+
+.accordion-button:not(.collapsed){
+    color: rgb(213, 213, 230);
+}
+
+.accordion-body{
+    background-color: rgba(49, 49, 49, .5);
+}
+
+.accordion-body > h3{
+    color: rgb(235, 235, 235);
+    text-align: center;
 }
 
     /* FAQs ENDS */
@@ -365,7 +394,28 @@ div h2{
     font-weight: 700;
 }
 
-.grid{
+.form-control{
+    font-size: 1.4em;
+    padding: .4em;
+    background-color: rgb(223, 222, 222);
+    
+}
+
+.form-control:focus-visible{
+    border: rgb(247, 128, 128) solid;
+}
+
+.form-select{
+    height: 3em;
+    font-size: 1.2em;
+    background-color: rgb(223, 222, 222);
+}
+
+.form-select:focus-visible{
+    border: rgb(247, 128, 128) solid;
+}
+
+/* .grid{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
@@ -406,7 +456,7 @@ div h2{
 
 .grid-item6{
     grid-area: localidad;
-}
+} */
 
 .datos-producto{
     display: grid;
@@ -445,9 +495,9 @@ div h2{
 
 .map{
     display: block;
-    width: 80%;
+    width: 100%;
     height: 24em;
-    margin: 3em auto;
+    margin-left: 5em;
     
 }
 .grid-item{
@@ -458,8 +508,16 @@ div h2{
 
 .input{
     width: 30%;
+    color: rgb(213, 213, 230);
+    font-size: 1.4em;
+    font-weight: 600;
+    background-color: rgb(49, 49, 49);
+}
+
+.input:hover{
+    background-color: rgb(213, 213, 230);
     color: rgb(49, 49, 49);
-    font-size: 1.2em;
+    transition: 0.2s ease-in-out;
 }
 label{
     font-weight: bold;
@@ -469,17 +527,19 @@ label{
 
 input, textarea{
     padding: 5px;
-    width: 20em;
+    width: 80%;
     border: 1px solid rgb(219, 219, 219);
     border-radius: 3px;
     margin-bottom: 10px;
     overflow: visible;
     color: rgb(49, 49, 49);
+    background-color: rgb(219, 219, 219);
     font-size: 1.2em;
 }
 
 input{
     padding: 10px;
+    width: 80%;
     background-color: rgb(219, 219, 219);
     border: none;
     border-radius: 3px;
@@ -489,10 +549,11 @@ input{
 div select{
     border: none;
     border-radius: 3px;
-    width: 30%;
+    width: 80%;
     height: 50%;
     text-align: center;
     font-size: 1.2em;
+    background-color: rgb(219, 219, 219);
 }
 
     /* RESPONSIVE */
@@ -517,6 +578,7 @@ div select{
         width: 6%;
     }
 }
+
 @media (width < 880px){
     nav form input{
         display: none;
@@ -526,11 +588,11 @@ div select{
         background-color: rgb(123, 123, 128);
     }
 
-    .logo{
-        width: 100%;
+    /* .logo{
+        width: 60%;
         margin: 0;
         
-    }
+    } */
 
     .articulos-content{
         flex-direction: column;

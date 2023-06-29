@@ -13,13 +13,13 @@
     <!-- STARTS NAVBAR -->
     <nav class="navbar navbar-expand-lg sticky-top bg w-100">
         <div class="container-fluid">
-          <a class="navbar-brand m-0 p-0" href="#">
-            <img src="../img/logo.png" alt="logo de music store" class="w-50 ms-1 ps-1">
+          <a class="navbar-brand w-25 m-0 p-0" href="../index.html">
+            <img src="../img/logo.png" alt="logo de music store" class="w-75 ms-1 ps-1">
           </a>
           <button class="navbar-toggler d-block d-sm-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" id="IconChangeColor"><path d="M29 6V35" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="mainIconPathAttribute" fill="#000000"></path><path d="M15 36.04C15 33.2565 17.2565 31 20.04 31H29V36.96C29 39.7435 26.7435 42 23.96 42H20.04C17.2565 42 15 39.7435 15 36.96V36.04Z" stroke="#000000" stroke-width="1" stroke-linejoin="round" id="mainIconPathAttribute" fill="#000000"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M29 14.0664L41.8834 17.1215V9.01339L29 6V14.0664Z" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="mainIconPathAttribute" fill="#000000"></path><path d="M6 8H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="mainIconPathAttribute" fill="#000000"></path><path d="M6 16H20" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="mainIconPathAttribute" fill="#000000"></path><path d="M6 24H16" stroke="#000000" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" id="mainIconPathAttribute" fill="#000000"></path></svg>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <div class="collapse navbar-collapse mt-2" id="navbarSupportedContent">
             <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center">
               <li class="nav-item">
                 <a class="nav-link active a-color" aria-current="page" href="../index.html">Inicio</a>
@@ -54,35 +54,62 @@
     <div>    
         <h2>Datos personales</h2>
     </div>
-        <div class="grid-container">
-            <form class="grid" action="">
-                <div class="grid-item1 grid-position">
-                    <label for="nombre">Nombre</label>
-                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
-                </div>
-                <div class="grid-item2 grid-position">
-                    <label for="apellido">Apellido</label>
-                    <input type="text" id="apellido" placeholder="Ingrese su apellido">
-                </div>
-                <div class="grid-item3 grid-position">
-                    <label for="telefono">Telefono</label>
-                    <input type="tel" id="telefono" placeholder="Ingrese su telefono">
-                </div>
-                <div class="grid-item4 grid-position">
-                    <label for="email">Email</label>
-                    <input type="email" id="email" placeholder="Ingrese su email">
-                </div>
-                <div class="grid-item5 grid-position">
-                    <label for="provincia">Provincia</label>
-                    <input type="text" id="provincia">
-                </div>
-                <div class="grid-item6 grid-position">
-                    <label for="localidad">Localidad</label>
-                    <input type="text" id="localidad">
-                </div>
+        <section class="d-flex flex-nowrap p-2 mx-3">
+            <form class="row g-3 needs-validation" novalidate>
+                <form class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                      <label for="validationDefault01" class="form-label">Nombre</label>
+                      <input type="text" class="form-control" id="validationDefault01" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <label for="validationDefault02" class="form-label">Apellido</label>
+                      <input type="text" class="form-control" id="validationDefault02" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                      <label for="validationDefaul03" class="form-label">Teléfono</label>
+                      <div class="input-group">
+                        <input type="tel" class="form-control" id="validationDefault03"  required>
+                      </div>
+                    </div>
+                    <div class="col-lg-5 col-md-6">
+                      <label for="validationDefault04" class="form-label">Email</label>
+                      <input type="email" class="form-control" id="validationDefault04" required>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <label label for="validationDefault05" class="form-label">Provincia</label>
+                        <select class="form-select" id="validationDefault05" required>
+                            <option>Seleccionar...</option>
+                            <option>Buenos Aires</option>
+                            <option>Ciudad Autónoma de Buenos Aires</option>
+                            <option>Catamarca</option>
+                            <option>Chaco</option>
+                            <option>Chububt</option>
+                            <option>Córdoba</option>
+                            <option>Corrientes</option>
+                            <option>Entre Ríos</option>
+                            <option>Formosa</option>
+                            <option>Jujuy</option>
+                            <option>La Pampa</option>
+                            <option>La Rioja</option>
+                            <option>Mendoaza</option>
+                            <option>Misiones</option>
+                            <option>Neuquén</option>
+                            <option>Río Negro</option>
+                            <option>Salta</option>
+                            <option>San Juan</option>
+                            <option>Santa Cruz</option>
+                            <option>Santiago del Estero</option>
+                            <option>Tucumán</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                      <label for="validationDefault06" class="form-label">Localidad</label>
+                      <input type="text" class="form-control" id="validationDefault06" required>
+                    </div>
+                  </form>
             </form>
-        </div>
-        <div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.260779633436!2d-58.3738154!3d-34.6025129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabed833e7bf%3A0x34b2c2bf7d4ced03!2sBAIRES%20ROCKS%20-%20Casa%20de%20M%C3%BAsica%20-%20Instrumentos%20Musicales%20-%20Guitarras%20-%20Pianos%20-%20Teclados%20-%20Ukeleles!5e0!3m2!1ses-419!2sar!4v1684619991827!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map d-none d-lg-block"></iframe>
+        </section>
             <h2>Datos del producto</h2>
         </div>
         <div class="grid-container">
@@ -111,7 +138,6 @@
                 </div>
             </form>
         </div>
-        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13136.260779633436!2d-58.3738154!3d-34.6025129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccabed833e7bf%3A0x34b2c2bf7d4ced03!2sBAIRES%20ROCKS%20-%20Casa%20de%20M%C3%BAsica%20-%20Instrumentos%20Musicales%20-%20Guitarras%20-%20Pianos%20-%20Teclados%20-%20Ukeleles!5e0!3m2!1ses-419!2sar!4v1684619991827!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
     </main>
     <footer>
         <a href="../index.html"><img src="../img/logo.png" alt="logo de music store" class="footer-logo w-50"></a>
