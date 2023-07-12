@@ -569,7 +569,7 @@ main .how-to-buy h1, main .how-to-buy p {
 
 div h1 {
   margin-left: 1em;
-  padding-top: 0.5em;
+  padding-top: 1.4em;
   font-size: 3em;
   font-weight: bold;
 }
@@ -585,6 +585,9 @@ div h2 {
   padding: 0.4em;
   background-color: rgb(223, 222, 222);
 }
+.form-control:focus {
+  outline: none;
+}
 .form-control:focus-visible {
   border: rgb(247, 128, 128) solid;
 }
@@ -594,16 +597,27 @@ div h2 {
   font-size: 1.2em;
   background-color: rgb(223, 222, 222);
 }
+.form-select:focus {
+  outline: none;
+}
 .form-select:focus-visible {
   border: rgb(247, 128, 128) solid;
+}
+
+.producto-titulo {
+  margin-left: 1.2em;
+  font-size: 2.4em;
+  font-weight: bold;
 }
 
 .datos-producto {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-template-areas: "marca modelo" "motivo mensaje" "enviar cancelar";
+  grid-template-areas: "marca modelo" "motivo mensaje" "botones botones";
   gap: 10px;
+  margin-top: 2em;
+  margin-bottom: 5em;
 }
 .datos-producto .datos-producto1 {
   grid-area: marca;
@@ -623,12 +637,21 @@ div h2 {
 .datos-producto .datos-producto6 {
   grid-area: cancelar;
 }
-.datos-producto .grid-item {
+.datos-producto .form-btn {
+  grid-area: botones;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
+}
+.datos-producto .grid-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-left: 2em;
 }
 
 .map {
@@ -639,7 +662,7 @@ div h2 {
 }
 
 .input {
-  width: 30%;
+  width: 20vw;
   color: rgb(213, 213, 230);
   font-size: 1.4em;
   background-color: rgb(49, 49, 49);
@@ -658,15 +681,21 @@ label {
 
 input {
   padding: 10px;
-  width: 80%;
+  width: 90%;
   background-color: rgb(219, 219, 219);
   border: none;
   border-radius: 3px;
 }
+input:focus {
+  outline: none;
+}
+input:focus-visible {
+  border: rgb(247, 128, 128) solid;
+}
 
 .mensaje {
   padding: 5px;
-  width: 80%;
+  width: 90%;
   border: 1px solid rgb(219, 219, 219);
   border-radius: 3px;
   margin-bottom: 10px;
@@ -675,14 +704,23 @@ input {
   background-color: rgb(219, 219, 219);
   font-size: 1.2em;
 }
+.mensaje:focus {
+  outline: none;
+}
+.mensaje:focus-visible {
+  border: rgb(247, 128, 128) solid;
+}
 
 div select {
   height: 50%;
-  width: 80%;
+  width: 90%;
   border: none;
   border-radius: 3px;
   font-size: 1.2em;
   background-color: rgb(219, 219, 219);
+}
+div select:focus-visible {
+  border: rgb(247, 128, 128) solid;
 }
 
 @media (width < 1000px) {
