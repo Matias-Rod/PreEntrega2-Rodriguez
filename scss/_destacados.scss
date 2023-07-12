@@ -75,5 +75,10 @@ div{
     @include sizes(auto, 70%);
     @include spacing(2.5em, 3em, 0, 0);
     font-size: $textoLg;
-    border-top: 10px black solid;   
+    border-top: 10px black solid; 
+    h2{
+        font-size: $textoXl;
+        margin-bottom: 1.4em;
+        font-weight: $textBold;
+    }  
 }

@@ -20,3 +20,46 @@
         border-image: linear-gradient(rgba(0, 0, 0, 0), rgb(197, 12, 12), rgba(0, 0, 0, 0)) 1 100%;       
     }
 }
+
+.mision-vision{
+    @include flex(row, center, center, nowrap);
+    margin-bottom: 3em;
+    .mision-vision-content{
+        @include flex(column, center, flex-start, nowrap);
+        .vision{
+            @include flex(column, center, flex-start, nowrap);
+            @include spacing(0, 0, 1em, 1em);
+            width: 80%;
+            margin-left: 4.6em;
+        }
+        .vision-titulo{
+            margin-bottom: 1em;
+            margin-left: 0;
+        }
+        .vision-texto{
+            font-size: $textoMd;
+            font-weight: $textBold;
+        }
+        .mision{
+            @include flex(column, center, flex-start, nowrap);
+            width: 80%;
+            margin-left: 4.6em;
+            .mision-titulo{
+                padding-left: 0;
+                margin-bottom: 1em;
+                margin-left: 0;
+            }
+            .mision-texto{
+                font-size: $textoMd;
+                font-weight: $textBold;
+            }
+        }
+    }
+    
+    .img-nosotros{
+    width: 50%;
+    @include spacing(0em, 0, 2em, 2em);
+    border-radius: 5px;
+    box-shadow: 13px -5px 20px -1px rgba(0,0,0,0.75);
+    }
+}

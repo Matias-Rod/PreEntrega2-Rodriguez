@@ -176,6 +176,11 @@ div .destacados {
   font-size: 1.8em;
   border-top: 10px black solid;
 }
+.bienvenida h2 {
+  font-size: 2em;
+  margin-bottom: 1.4em;
+  font-weight: bold;
+}
 
 .actions {
   display: flex;
@@ -414,6 +419,66 @@ div .destacados {
   margin: 2em 5em;
   border-left: 3px solid;
   border-image: linear-gradient(rgba(0, 0, 0, 0), rgb(197, 12, 12), rgba(0, 0, 0, 0)) 1 100%;
+}
+
+.mision-vision {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  margin-bottom: 3em;
+}
+.mision-vision .mision-vision-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+}
+.mision-vision .mision-vision-content .vision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  padding: 0 0;
+  margin: 1em 1em;
+  width: 80%;
+  margin-left: 4.6em;
+}
+.mision-vision .mision-vision-content .vision-titulo {
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+.mision-vision .mision-vision-content .vision-texto {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.mision-vision .mision-vision-content .mision {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: nowrap;
+  width: 80%;
+  margin-left: 4.6em;
+}
+.mision-vision .mision-vision-content .mision .mision-titulo {
+  padding-left: 0;
+  margin-bottom: 1em;
+  margin-left: 0;
+}
+.mision-vision .mision-vision-content .mision .mision-texto {
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.mision-vision .img-nosotros {
+  width: 50%;
+  padding: 0em 0;
+  margin: 2em 2em;
+  border-radius: 5px;
+  box-shadow: 13px -5px 20px -1px rgba(0, 0, 0, 0.75);
 }
 
 main .how-to-buy {
