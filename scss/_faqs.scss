@@ -2,7 +2,7 @@ main{
     .how-to-buy{
         @include flex(column, center, center, nowrap);
         h1, p{
-            font-size: $textoXl;
+            font-size: $textoXxxl;
             line-height: 2em;
         }
     }
@@ -18,11 +18,18 @@ main{
             @include sizes(48%, 48%);
             fill: map-get($map: $colores, $key:"trece" )
         }
+        p{
+            font-size: $textoMd;
+            margin: 1em;
+        }
     }
 }
 
 .accordion{
-    height: 50vh;
+    height: 60vh;
+    width: 70%;
+    margin: 2em;
+    margin-left: 4em;
     background-color: map-get($map: $colores, $key: "cuatro" );
     border-radius: 5px;
     .accordion-item{
@@ -37,25 +44,27 @@ main{
     .accordion-button{
         font-size: $textoXsm;
         background-color: map-get($map: $colores, $key: "once" );
-        color: map-get($map: $colores, $key: "ocho" );
+        color: map-get($map: $colores, $key: "uno" );
         &:first-of-type{
             text-align: center;
         }
         &:focus{
             background-color: map-get($map: $colores, $key: "once" );
-            color: map-get($map: $colores, $key: "once" );
+            color: map-get($map: $colores, $key: "uno" );
         }
         &:not(:focus){
             background-color: map-get($map: $colores, $key: "once" );
-            color: map-get($map: $colores, $key: "once" );
+            color: map-get($map: $colores, $key: "uno" );
         &:not(.collapsed){
+            background-color: map-get($map: $colores, $key: "once" );
             color: map-get($map: $colores, $key: "ocho" );
         }
         }
     }
     .accordion-body{
         h3{
-            color: map-get($map: $colores, $key: "diez" );
+            background-color: map-get($map: $colores, $key: "once" );
+            color: map-get($map: $colores, $key: "uno" );
             text-align: center;
         }
     }

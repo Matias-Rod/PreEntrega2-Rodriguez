@@ -424,7 +424,7 @@ main .how-to-buy {
   flex-wrap: nowrap;
 }
 main .how-to-buy h1, main .how-to-buy p {
-  font-size: 2em;
+  font-size: 3em;
   line-height: 2em;
 }
 
@@ -449,9 +449,16 @@ main .how-to-buy h1, main .how-to-buy p {
   width: 48%;
   fill: rgb(56, 49, 49);
 }
+.pasos-a-seguir div p {
+  font-size: 1.4em;
+  margin: 1em;
+}
 
 .accordion {
-  height: 50vh;
+  height: 60vh;
+  width: 70%;
+  margin: 2em;
+  margin-left: 4em;
   background-color: rgb(100, 99, 99);
   border-radius: 5px;
 }
@@ -472,24 +479,26 @@ main .how-to-buy h1, main .how-to-buy p {
 .accordion .accordion-button {
   font-size: 0.6em;
   background-color: rgba(49, 49, 49, 0.5);
-  color: rgb(213, 213, 230);
+  color: rgb(219, 219, 219);
 }
 .accordion .accordion-button:first-of-type {
   text-align: center;
 }
 .accordion .accordion-button:focus {
   background-color: rgba(49, 49, 49, 0.5);
-  color: rgba(49, 49, 49, 0.5);
+  color: rgb(219, 219, 219);
 }
 .accordion .accordion-button:not(:focus) {
   background-color: rgba(49, 49, 49, 0.5);
-  color: rgba(49, 49, 49, 0.5);
+  color: rgb(219, 219, 219);
 }
 .accordion .accordion-button:not(:focus):not(.collapsed) {
+  background-color: rgba(49, 49, 49, 0.5);
   color: rgb(213, 213, 230);
 }
 .accordion .accordion-body h3 {
-  color: rgb(235, 235, 235);
+  background-color: rgba(49, 49, 49, 0.5);
+  color: rgb(219, 219, 219);
   text-align: center;
 }
 
