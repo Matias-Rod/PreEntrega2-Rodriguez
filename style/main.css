@@ -66,15 +66,6 @@ nav ul li:hover {
 nav .nav-toogler {
   border: 2px rgb(34, 34, 34) solid;
 }
-nav .btn-bg {
-  background-color: rgb(49, 49, 49);
-  color: rgb(235, 235, 235);
-}
-nav .btn-bg:hover {
-  background-color: rgb(235, 235, 235);
-  color: rgb(49, 49, 49);
-}
-
 .color-slide {
   background-color: rgb(49, 49, 49);
 }
@@ -118,12 +109,8 @@ div .destacados {
   width: 50%;
 }
 .articulo .btn-bg {
-  background-color: rgb(49, 49, 49);
-  color: rgb(240, 234, 234);
-}
-.articulo .btn-bg:hover {
-  background-color: rgb(125, 125, 128);
-  color: rgb(240, 234, 234);
+  width: 50%;
+  border: 2px rgb(34, 34, 34) solid;
 }
 
 .video-cita {
@@ -366,33 +353,6 @@ div .destacados {
   align-items: flex-start;
   flex-wrap: nowrap;
 }
-.tienda .producto1 .descripcion .btn-bg,
-.tienda .producto2 .descripcion .btn-bg,
-.tienda .producto3 .descripcion .btn-bg,
-.tienda .producto4 .descripcion .btn-bg,
-.tienda .producto5 .descripcion .btn-bg,
-.tienda .producto6 .descripcion .btn-bg,
-.tienda .producto7 .descripcion .btn-bg,
-.tienda .producto8 .descripcion .btn-bg,
-.tienda .producto9 .descripcion .btn-bg,
-.tienda .producto10 .descripcion .btn-bg {
-  background-color: rgb(49, 49, 49);
-  color: rgb(219, 219, 219);
-}
-.tienda .producto1 .descripcion .btn-bg:hover,
-.tienda .producto2 .descripcion .btn-bg:hover,
-.tienda .producto3 .descripcion .btn-bg:hover,
-.tienda .producto4 .descripcion .btn-bg:hover,
-.tienda .producto5 .descripcion .btn-bg:hover,
-.tienda .producto6 .descripcion .btn-bg:hover,
-.tienda .producto7 .descripcion .btn-bg:hover,
-.tienda .producto8 .descripcion .btn-bg:hover,
-.tienda .producto9 .descripcion .btn-bg:hover,
-.tienda .producto10 .descripcion .btn-bg:hover {
-  background-color: rgb(219, 219, 219);
-  color: rgb(49, 49, 49);
-}
-
 .nosotros {
   display: flex;
   flex-direction: row;
@@ -841,6 +801,32 @@ div select:focus-visible {
     grid-template-areas: "marca" "modelo" "motivo" "mensaje" "enviar" "cancelar";
     gap: 10px;
   }
+}
+.button, nav .btn-bg, .articulo .btn-bg, .tienda .producto1 .descripcion .btn-bg,
+.tienda .producto2 .descripcion .btn-bg,
+.tienda .producto3 .descripcion .btn-bg,
+.tienda .producto4 .descripcion .btn-bg,
+.tienda .producto5 .descripcion .btn-bg,
+.tienda .producto6 .descripcion .btn-bg,
+.tienda .producto7 .descripcion .btn-bg,
+.tienda .producto8 .descripcion .btn-bg,
+.tienda .producto9 .descripcion .btn-bg,
+.tienda .producto10 .descripcion .btn-bg {
+  background-color: rgb(49, 49, 49);
+  color: rgb(213, 213, 230);
+}
+.button:hover, nav .btn-bg:hover, .articulo .btn-bg:hover, .tienda .producto1 .descripcion .btn-bg:hover,
+.tienda .producto2 .descripcion .btn-bg:hover,
+.tienda .producto3 .descripcion .btn-bg:hover,
+.tienda .producto4 .descripcion .btn-bg:hover,
+.tienda .producto5 .descripcion .btn-bg:hover,
+.tienda .producto6 .descripcion .btn-bg:hover,
+.tienda .producto7 .descripcion .btn-bg:hover,
+.tienda .producto8 .descripcion .btn-bg:hover,
+.tienda .producto9 .descripcion .btn-bg:hover,
+.tienda .producto10 .descripcion .btn-bg:hover {
+  background-color: rgb(213, 213, 230);
+  color: rgb(49, 49, 49);
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -29,12 +29,9 @@ div{
         width: 50%;
         }
         .btn-bg{
-            background-color: map-get($map: $colores, $key: "dos" );
-            color: map-get($map: $colores, $key: "seis" );
-            &:hover{
-                background-color: map-get($map: $colores, $key: "cinco" );
-                color: map-get($map: $colores, $key: "seis" );
-            }
+            @extend .button;
+            width: 50%;
+            border: $border1;
         }
 }
 

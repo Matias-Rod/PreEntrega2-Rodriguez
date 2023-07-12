@@ -1,0 +1,8 @@
+.button{
+    background-color: map-get($map: $colores, $key: "dos" );
+    color: map-get($map: $colores, $key: "ocho" );
+    &:hover{
+        background-color: map-get($map: $colores, $key: "ocho" );
+        color: map-get($map: $colores, $key: "dos" );
+    }
+}
