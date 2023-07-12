@@ -1,0 +1,65 @@
+.actions{
+    @include flex(row, flex-end, center, nowrap);
+    padding-top: 1em;
+    form{
+        display: flex;
+        width: 20%;
+    }
+    button{
+        @include spacing (6px, 6px, 0, 10px);
+        @include sizes(40px, 40px);
+        border: $noBorder;
+        border-radius: 15%;
+        background-color: map-get($map: $colores, $key: "cinco" );
+        svg{
+            fill: map-get($map: $colores, $key: "diez" );
+        }
+    }
+    input{
+        border: $noBorder;
+        border-radius: 8px;
+    }
+}
+// ACTIONS ENDS
+
+.filter{
+    background-color: map-get($map: $colores, $key: "cincoA" );
+    margin: 0 30px;
+    padding-top: 1em;
+    padding-left: 10px;
+    width: 30em;
+    &:hover{
+        background-color: map-get($map: $colores, $key: "once" );
+    }
+    ul{
+        li{
+            list-style: none;
+            text-decoration: none;
+            color: map-get($map: $colores, $key: "dos" );
+            font-size: $textoMd;
+            margin-left: 10px;
+            &:hover{
+                color: map-get($map: $colores, $key: "diez" );
+                font-size: $textoLg;
+                transform: scale(1.1);
+                transition: transform 0.4s;
+            }
+            a{
+                text-decoration: none;
+                &:link{
+                    text-decoration: none;
+                }
+                &:visited{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+    p{
+        font-size: $textoXl;
+        font-weight: $textBold;
+        letter-spacing: 2px;
+    }
+}
+
+// FILTERS ENDS

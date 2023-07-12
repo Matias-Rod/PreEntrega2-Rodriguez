@@ -100,7 +100,7 @@ div .destacados{
     
     .btn-bg{
         background-color: rgb(49, 49, 49);
-        color: white;
+        color: rgb(240, 234, 234);
     }
     
     .btn-bg:hover{
@@ -122,7 +122,6 @@ div .destacados{
         margin: 0 10px;
         padding-right: 8px;
         fill: black;
-
     }
 
     .footer-link{
@@ -148,7 +147,7 @@ div .destacados{
         border-radius: 15%;    
         height: 40px;
         width: 40px;
-        background-color: rgb(125, 125, 128);    
+        background-color: rgba(125, 125, 128,);    
     }
 
     .actions input{
@@ -329,7 +328,7 @@ main .how-to-buy{
 
 .accordion{
     height: 50vh;
-    background-color: rgba(100, 99, 99, .5);
+    background-color: rgb(100, 99, 99);
     border-radius: 5px;
 }
 

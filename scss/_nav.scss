@@ -1,0 +1,23 @@
+nav{
+    background-color: map-get($map: $colores, $key: "cinco" );
+    ul{
+        li{font-size: $textoLg;
+            &:hover{
+                background-color: map-get($map: $colores, $key: "once" );
+                border-radius: 5px;
+            }
+
+        }
+    }
+    .nav-toogler{
+        border: $border1;
+    }
+    .btn-bg{
+        background-color: map-get($map: $colores, $key: "dos" );
+        color: map-get($map: $colores, $key: "diez" );
+        &:hover{
+            background-color: map-get($map: $colores, $key: "diez" );
+            color: map-get($map: $colores, $key: "dos" );
+        }
+    }
+}

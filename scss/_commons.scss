@@ -1,0 +1,47 @@
+*{
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url(../background/namesnack-nombres-para-tiendas-de-instrumentos-musicales-3869x2501-2021121.png);
+    background-attachment: fixed;
+}
+
+.textContent{
+    font-size: $textoMd;
+    font-weight: bold;
+    text-align: center;
+    background-color: map-get($map: $colores, $key: "catorce" );
+    padding: 8px;
+}
+
+.img-header{
+    padding: 0;
+    margin: 0;
+    height: auto;
+    width: 100%;
+}
+
+footer{
+    background-color: map-get($map: $colores, $key: "cinco" );
+    text-align: center;
+    @include flex(column, center, center, nowrap);
+    svg{
+        @include sizes(8%, 8%);
+        margin: 0 10px;
+        padding-right: 8px;
+        fill: map-get($map: $colores, $key: "dos" )
+    }
+    .footer-link{
+        margin: 0 10px;
+        font-size: $textoMd;
+        line-height: 1.8em;
+        text-decoration: none;
+        color: map-get($map: $colores, $key: "dos" );
+    }
+}

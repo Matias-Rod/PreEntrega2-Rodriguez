@@ -1,0 +1,98 @@
+.tienda{
+    @include grid(30% reapeat(3,1fr), 8em repeat(5,300px),
+    "actions actions actions"
+    "search prod1 prod2"
+    "search prod3 prod4"
+    "guitarra prod5 prod6"
+    "guitarra prod7 prod8"
+    ". prod9 prod10", 8px);
+    .actions{
+        grid-area: actions;
+    }
+    .filter{
+        grid-area: search;
+    }
+    .guitarra-tienda{
+        grid-area: guitarra;
+        margin-top: 2em;
+        margin-left: 3em;
+        height: 77vh;
+        border-radius: 3px;
+    }
+    .producto1{
+        grid-area: prod1;
+    }
+    .producto2{
+        grid-area: prod2;
+    }
+    .producto3{
+        grid-area: prod3;
+    }
+    .producto4{
+        grid-area: prod4;
+    }
+    .producto5{
+        grid-area: prod5;
+    }
+    .producto6{
+        grid-area: prod6;
+    }
+    .producto7{
+        grid-area: prod7;
+    }
+    .producto8{
+        grid-area: prod8;
+    }
+    .producto9{
+        grid-area: prod9;
+    }
+    .producto10{
+        grid-area: prod10;
+    }
+    .section-bg{
+        background-color: map-get($map: $colores, $key:"doce" );
+        &:hover{
+            color: map-get($map: $colores, $key: "dos" );
+            box-shadow: 3px 1px 4px
+        }
+    }
+    .producto1,
+    .producto2,
+    .producto3,
+    .producto4,
+    .producto5,
+    .producto6,
+    .producto7,
+    .producto8,
+    .producto9,
+    .producto10{
+        img{
+            &:hover{
+                transform: scale(1.2);
+                transition: 1s 
+            }
+        }
+        div{
+            @include flex(row, flex-end, center, nowrap);
+            width: 90%;
+            p{
+                font-size: $textoMd;
+                font-weight: $textBold;
+                padding-left: .5em;
+            }
+        }
+        .descripcion{
+            @include flex(column, flex-start, flex-start, nowrap);
+            .btn-bg{
+                background-color: map-get($map: $colores, $key: "dos" );
+                color: map-get($map: $colores, $key: "uno" );
+                &:hover{
+                    background-color: map-get($map: $colores, $key: "uno" );
+                color: map-get($map: $colores, $key: "dos" );
+                }
+            }
+        }
+    }
+}
+
+// TIENDA ENDS

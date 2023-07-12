@@ -1,0 +1,22 @@
+.nosotros{
+    @include flex(row, center, center, nowrap);
+    .title{
+        font-size: $textoXxl;
+        color: map-get($map: $colores, $key: "siete");
+        font-weight: $textBold;
+        margin-left: 2em;
+        padding-right: 1em;
+    }
+    .subtitle{
+        font-size: $textoLg;
+        margin-left: 3em;
+        padding-right: 1em;
+    }
+    .presentacion{
+        font-size: $textoMd;
+        font-weight: $textRegular;
+        @include spacing(5em, 5em, 2em, 5em);
+        border-left: 3px solid;
+        border-image: linear-gradient(rgba(0, 0, 0, 0), rgb(197, 12, 12), rgba(0, 0, 0, 0)) 1 100%;       
+    }
+}

@@ -1,0 +1,3 @@
+.color-slide{
+    background-color: map-get($map: $colores, $key: "dos" );
+}

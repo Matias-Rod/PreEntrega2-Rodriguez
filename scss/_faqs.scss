@@ -1,0 +1,62 @@
+main{
+    .how-to-buy{
+        @include flex(column, center, center, nowrap);
+        h1, p{
+            font-size: $textoXl;
+            line-height: 2em;
+        }
+    }
+}
+
+.pasos-a-seguir{
+    @include flex(row, space-around, start, nowrap);
+    div{
+        @include flex(column, center, center, nowrap);
+        text-align: center;
+        font-size: $textoMd;
+        svg{
+            @include sizes(48%, 48%);
+            fill: map-get($map: $colores, $key:"trece" )
+        }
+    }
+}
+
+.accordion{
+    height: 50vh;
+    background-color: map-get($map: $colores, $key: "cuatro" );
+    border-radius: 5px;
+    .accordion-item{
+        background-color: map-get($map: $colores, $key: "once" );
+    }
+    .accordion-header{
+        @include flex(row, space-between, start, nowrap);
+        @include sizes (3em, 30em);
+        margin: 0 auto;
+        background-color: map-get($map: $colores, $key: "once" );
+    }
+    .accordion-button{
+        font-size: $textoXsm;
+        background-color: map-get($map: $colores, $key: "once" );
+        color: map-get($map: $colores, $key: "ocho" );
+        &:first-of-type{
+            text-align: center;
+        }
+        &:focus{
+            background-color: map-get($map: $colores, $key: "once" );
+            color: map-get($map: $colores, $key: "once" );
+        }
+        &:not(:focus){
+            background-color: map-get($map: $colores, $key: "once" );
+            color: map-get($map: $colores, $key: "once" );
+        &:not(.collapsed){
+            color: map-get($map: $colores, $key: "ocho" );
+        }
+        }
+    }
+    .accordion-body{
+        h3{
+            color: map-get($map: $colores, $key: "diez" );
+            text-align: center;
+        }
+    }
+}

@@ -1,0 +1,149 @@
+@media (width < 1000px){
+    .tienda{
+        @include grid(repeat(2, 1fr), 8em repeat(5, 300px), "actions actions"
+        "prod1 prod2"
+        "prod3 prod4"
+        "prod5 prod6"
+        "prod7 prod8"
+        "prod9 prod10", 8px)
+    }
+}
+
+@media (width < 880px){
+    nav{
+        form{
+            input{
+                display: none;
+            }
+        }
+    }
+    .navbar-collapse{
+        background-color: map-get($map: $colores, $key: "cinco" );
+    }
+    .articulos-content{
+        @include flex(column, start, center, nowrap)
+    }
+    .articulo{
+        button{
+            width: 40%;
+        }
+    }
+
+    // INDEX ENDS
+    .filter{
+        display: none;
+    }
+    .actions{
+        input{
+            display: none;
+        }
+    }
+    .tienda{
+        @include grid(1fr, auto, "actions"
+        "prod1"
+        "prod2"
+        "prod3"
+        "prod4"
+        "prod5"
+        "prod6"
+        "prod7"
+        "prod8"
+        "prod9"
+        "prod10", 1em);
+        section{
+            padding-bottom: 1.6em;
+        }
+        .producto1,
+        .producto2,
+        .producto3,
+        .producto4,
+        .producto5,
+        .producto6,
+        .producto7,
+        .producto8,
+        .producto9,
+        .producto10{
+            div{
+                p{
+                    padding-right: 1em;
+                    line-height: 2em;
+                    font-size: $textoMd
+                }
+            }
+        }
+    }
+    // TIENDA END
+    .nosotros{
+        flex-direction: column;
+        section{
+            .title{
+                font-size: 3.4em;
+                text-align: center;
+                padding-bottom: .4em;
+            }
+            .subtitle{
+                font-size: $textoXxl;
+                text-align: center;
+                @include spacing(1em, 2em, auto, auto);
+                border-bottom: 3px solid;
+  border-image: linear-gradient(rgba(0, 0, 0, 0), red, rgba(0, 0, 0, 0)) 1 100%;
+}
+            .presentacion{
+                padding: 1.6em;
+                text-align: center;
+                font-weight: $textRegular;
+                border-left: none;                
+            }
+        }
+    }
+    // QUIENES SOMOS END
+    .grid{
+        @include grid(1fr, auto, "nombre"
+        "apellido"
+        "telefono"
+        "email"
+        "provincia"
+        "localidad", 10px);
+    }
+    .grid-position{
+        padding-left: 2em;
+    }
+    .grid-item{
+        input{
+            width: 10em;
+            [placeholder="Marca del producto"], input[placeholder="Modelo del producto"]{
+                width: 14em;
+            }
+        }
+        select{
+            width: 10em;
+        }
+    }
+}
+
+@media (width < 768px){
+    .accordion-header{
+        width: 24em;
+    }
+    .accordion-body{
+        width: auto;
+    }
+    // CONTACTO ENDS
+}
+
+@media (width < 570px){
+    .descripcion-articulo{
+        font-size: $textoMd;
+        font-weight: $textBold;
+    }
+    // INDEX ENDS
+    .datos-producto{
+        @include grid(1fr, repeat(6, 100px), "marca"
+        "modelo"
+        "motivo"
+        "mensaje"
+        "enviar"
+        "cancelar", 10px);
+    }
+    // CONTACTO ENDS
+}

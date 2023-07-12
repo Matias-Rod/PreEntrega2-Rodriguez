@@ -7,7 +7,8 @@
     <title>Music Store - venta de instrumentos musicales</title>
     <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <div class="textContent">
@@ -70,7 +71,7 @@
             <h1 class="destacados">ARTICULOS DESTACADOS</h1>
         </div>
         <section class="articulos-content">
-          <figure class="card articulo w-50 p-3 m-0 h-25" style="width: 18rem;">
+          <figure class="card articulo w-50 p-3 m-0 h-25">
             <img src="./img/epiphone/archtop.png" class="card-img-top img-articulo"alt="epihpone archtop">
             <div class="card-body">
               <figcaption class="card-title descripcion-articulo">Guitarra eléctrica Epiphone Archtop Casino de arce natural brillante con diapasón de granadillo brasileño</figcaption>
@@ -81,7 +82,7 @@
               </svg>Agregar al carrito</a>
             </div>
           </figure>
-          <figure class="card articulo w-50 p-3 m-0 h-25" style="width: 18rem;">
+          <figure class="card articulo w-50 p-3 m-0 h-25">
             <img src="./img/bajos/bass-cort.png" class="card-img-top img-articulo" alt="bajo-cort">
             <div class="card-body">
               <figcaption class="card-title descripcion-articulo">Bajo Activo Cort Action Bass Plus Rojo Transparente</figcaption>
@@ -92,7 +93,7 @@
               </svg>Agregar al carrito</a>
             </div>
           </figure>
-          <figure class="card articulo w-50 p-3 m-0 h-25" style="width: 18rem;">
+          <figure class="card articulo w-50 p-3 m-0 h-25">
             <img src="./img/squier/squier-strato.png" class="card-img-top img-articulo" alt="squier stratocaster">
             <div class="card-body">
               <figcaption class="card-title descripcion-articulo">Guitarra eléctrica Squier Vintage Modified Surf Stratocaster de tilo candy apple red poliéster con diapasón de palo de rosa</figcaption>
@@ -103,7 +104,7 @@
               </svg>Agregar al carrito</a>
             </div>
           </figure>
-          <figure class="card articulo w-50 p-3 m-0 h-25" style="width: 18rem;">
+          <figure class="card articulo w-50 p-3 m-0 h-25">
             <img src="./img/teclados/casio-casiotone.png" class="card-img-top img-articulo" alt="casio casio-casiotone">
             <div class="card-body">
               <figcaption class="card-title descripcion-articulo">Teclado musical Casio Casiotone CT-S200 61 teclas rojo</figcaption>
@@ -114,6 +115,25 @@
               </svg>Agregar al carrito</a>
             </div>
           </figure>
+          <section class="video-cita">
+            <article article class="cita" data-aos="fade-right">
+              <div class="cita-texto"> 
+                <p>"Somos músicos. Hacemos música para vivir. Es así de simple. Nada más importa.</p>
+              </div>
+              <div class="cita-autor">
+                <p>Eddie Van Halen</p>
+              </div>
+            </article>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/JkBvQlayoY4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video-demo" data-aos="fade-left">
+            </iframe>
+          </section>
+          <article class="bienvenida">
+            <p class="texto-bienvenida">
+              En nuestra tienda, estamos dedicados a satisfacer todas tus necesidades musicales. Ya seas un principiante emocionado por dar los primeros pasos en el mundo de la música o un músico experimentado en busca de equipos de calidad profesional, hemos reunido una amplia gama de instrumentos y accesorios para ayudarte a alcanzar tus metas musicales.
+              Además de nuestra amplia selección de instrumentos, también ofrecemos una variedad de accesorios esenciales, como cuerdas, baquetas, afinadores, amplificadores, estuches y mucho más. Estos accesorios complementan tus instrumentos y te brindan todas las herramientas necesarias para tocar y cuidar de tus equipos.
+              Nuestro equipo de expertos en música está disponible para responder a tus preguntas, proporcionar asesoramiento personalizado y ayudarte a tomar decisiones informadas. Valoramos tu satisfacción y nos esforzamos por superar tus expectativas en cada interacción.
+            </p>
+          </article>
         </section>
     </main>
     <footer>
@@ -135,5 +155,9 @@
         <a href="./pages/contacto.html" class="footer-link"><div>Contacto</div></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>

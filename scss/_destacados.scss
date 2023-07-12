@@ -1,0 +1,79 @@
+div{
+    .destacados{
+        margin: 0;
+        padding: 20px;
+        text-align: center;
+        font-size: $textoXxxl;
+        color: map-get($map: $colores, $key: "tres" );
+        font-weight: $textBold;
+    }
+}
+
+.articulos-content{
+    @include flex(row, center, center,wrap);
+    background-color: map-get($map: $colores, $key: "uno" );
+}
+.articulo{
+    @include flex(column, center, center, nowrap);
+        text-align: center;
+        width: 50%;
+        padding: 20px;
+        background-color: transparent;
+        border: none;
+        .descripcion-articulo, .precio-articulo{
+        padding-bottom: 10px;
+        font-size: $textoMd;
+        font-weight: $textBold;
+        }
+        .img-articulo{
+        width: 50%;
+        }
+        .btn-bg{
+            background-color: map-get($map: $colores, $key: "dos" );
+            color: map-get($map: $colores, $key: "seis" );
+            &:hover{
+                background-color: map-get($map: $colores, $key: "cinco" );
+                color: map-get($map: $colores, $key: "seis" );
+            }
+        }
+}
+
+.video-cita{
+    @include flex(row, center, center, nowrap);
+    width: 100%;
+    background-color: map-get($map: $colores, $key: "doce" );
+    margin-bottom: 1em;
+    .cita{
+        @include flex(column, center, center, nowrap);
+        &::before{
+            content: "\201C";
+            color: map-get($map: $colores, $key: "trece" );
+            font-size: 5em;
+            position: relative;
+            left: -36%;
+        }
+        .cita-texto{
+            font-size: $textoXl;
+            padding-left: 3em;
+            margin-left: 3em;
+        }
+        .cita-autor{
+            font-size: $textoLg;
+            text-align: left;
+        }
+    }
+    .video-demo{
+        @include spacing(0em, 0, 3em, 3em);
+        @include sizes(70vh, 50%);
+        box-shadow: 13px -5px 20px -1px rgba(0,0,0,0.75);
+        border-radius: 5px;
+    }
+}
+
+
+.bienvenida{
+    @include sizes(auto, 70%);
+    @include spacing(2.5em, 3em, 0, 0);
+    font-size: $textoLg;
+    border-top: 10px black solid;   
+}
