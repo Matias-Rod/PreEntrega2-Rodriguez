@@ -64,20 +64,13 @@ div{
         grid-area: mensaje;
     }
     
-    .datos-producto5{
-        grid-area: enviar;
-    }
-    
-    .datos-producto6{
-        grid-area: cancelar;
-    }
     .form-btn{
         grid-area: botones;
         @include flex(row, space-around, center, nowrap);
     }
     .grid-item{
         @include flex(row, space-between, center, nowrap);
-        margin-left: 2em;
+        margin-left: 1.6em;
 
     }
 }
@@ -145,8 +138,19 @@ div{
         border-radius: 3px;
         font-size: $textoSm;
         background-color: map-get($map: $colores, $key: "uno" );
+        &:focus{
+            outline: none;
+        }
         &:focus-visible{
             border: $border2;
         }
     }
+}
+
+.banner{
+    display: block;
+    margin: auto;
+    width: 60%;
+    border-radius: 5px;
+    margin-bottom: 4em;
 }

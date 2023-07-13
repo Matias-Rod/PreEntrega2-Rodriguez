@@ -28,6 +28,20 @@
             width: 40%;
         }
     }
+    .video-cita{
+        @include flex(column, center, center, nowrap);
+        .cita{
+            .cita-texto{
+                padding-right: 2.4em;
+            }
+        }
+        .video-demo{
+            width: 60%;
+        }
+    }
+    .bienvenida{
+        width: 90%;
+    }
 
     // INDEX ENDS
     .filter{
@@ -110,25 +124,65 @@
     }
     .grid-item{
         input{
-            width: 10em;
+            width: 90%;
+            margin-left: 0;
             [placeholder="Marca del producto"], input[placeholder="Modelo del producto"]{
                 width: 14em;
             }
         }
         select{
-            width: 10em;
+            width: 90%;
         }
+    }
+    .input{
+        width: 20vw !important;
     }
 }
 
 @media (width < 768px){
+    .video-demo{
+        width: 70%;
+    }
+
+    // INDEX ENDS
+
+    .mision-vision{
+        @include flex(column, center, center, nowrap);
+        .mision-vision-content{
+            @include flex(row, center, center, nowrap);
+            .mision-texto{
+                padding-right: 1.6em;
+            }
+        }
+    }
+
+    // QUIENES SOMOS ENDS
+
     .accordion-header{
         width: 24em;
     }
     .accordion-body{
         width: auto;
     }
-    // CONTACTO ENDS
+    // FAQS ENDS
+
+    .datos-producto{
+        @include grid(1fr, repeat(6, 100px), "marca"
+        "modelo"
+        "motivo"
+        "mensaje"
+        "botones"
+        "botones", 10px);
+        input{
+            @include sizes(50%, 98%);
+        }
+        select{
+            width: 98%;
+        }
+        .mensaje{
+            width: 98%;
+        }
+    }
 }
 
 @media (width < 570px){
@@ -136,14 +190,30 @@
         font-size: $textoMd;
         font-weight: $textBold;
     }
+    .video-demo{
+        width: 80%;
+    }
     // INDEX ENDS
+
+    .mision-vision-content{
+        @include flex(column, center, center, wrap);
+    }
+
+    // QUIENES SOMOS ENDS 
+    
     .datos-producto{
         @include grid(1fr, repeat(6, 100px), "marca"
         "modelo"
         "motivo"
         "mensaje"
-        "enviar"
-        "cancelar", 10px);
+        "botones"
+        "botones", 10px);
+        .form-btn{
+            @include flex(column, center, center, nowrap);
+        }
+        .input{
+            margin-bottom: 4em;
+        }
     }
     // CONTACTO ENDS
 }

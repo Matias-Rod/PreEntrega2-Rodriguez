@@ -458,7 +458,9 @@ main .how-to-buy h1, main .how-to-buy p {
   flex-direction: row;
   justify-content: space-around;
   align-items: start;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
+  margin: 3em 3em;
+  padding-right: 1.4em;
 }
 .pasos-a-seguir div {
   display: flex;
@@ -470,8 +472,8 @@ main .how-to-buy h1, main .how-to-buy p {
   font-size: 1.4em;
 }
 .pasos-a-seguir div svg {
-  height: 48%;
-  width: 48%;
+  height: 40%;
+  width: 40%;
   fill: rgb(56, 49, 49);
 }
 .pasos-a-seguir div p {
@@ -482,7 +484,7 @@ main .how-to-buy h1, main .how-to-buy p {
 .accordion {
   height: 60vh;
   width: 70%;
-  margin: 2em;
+  margin-bottom: 4em;
   margin-left: 4em;
   background-color: rgb(100, 99, 99);
   border-radius: 5px;
@@ -591,12 +593,6 @@ div h2 {
 .datos-producto .datos-producto4 {
   grid-area: mensaje;
 }
-.datos-producto .datos-producto5 {
-  grid-area: enviar;
-}
-.datos-producto .datos-producto6 {
-  grid-area: cancelar;
-}
 .datos-producto .form-btn {
   grid-area: botones;
   display: flex;
@@ -611,7 +607,7 @@ div h2 {
   justify-content: space-between;
   align-items: center;
   flex-wrap: nowrap;
-  margin-left: 2em;
+  margin-left: 1.6em;
 }
 
 .map {
@@ -679,8 +675,19 @@ div select {
   font-size: 1.2em;
   background-color: rgb(219, 219, 219);
 }
+div select:focus {
+  outline: none;
+}
 div select:focus-visible {
   border: rgb(247, 128, 128) solid;
+}
+
+.banner {
+  display: block;
+  margin: auto;
+  width: 60%;
+  border-radius: 5px;
+  margin-bottom: 4em;
 }
 
 @media (width < 1000px) {
@@ -708,6 +715,22 @@ div select:focus-visible {
   }
   .articulo button {
     width: 40%;
+  }
+  .video-cita {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .video-cita .cita .cita-texto {
+    padding-right: 2.4em;
+  }
+  .video-cita .video-demo {
+    width: 60%;
+  }
+  .bienvenida {
+    width: 90%;
   }
   .filter {
     display: none;
@@ -772,21 +795,62 @@ div select:focus-visible {
     padding-left: 2em;
   }
   .grid-item input {
-    width: 10em;
+    width: 90%;
+    margin-left: 0;
   }
   .grid-item input [placeholder="Marca del producto"], .grid-item input input[placeholder="Modelo del producto"] {
     width: 14em;
   }
   .grid-item select {
-    width: 10em;
+    width: 90%;
+  }
+  .input {
+    width: 20vw !important;
   }
 }
 @media (width < 768px) {
+  .video-demo {
+    width: 70%;
+  }
+  .mision-vision {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .mision-vision .mision-vision-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .mision-vision .mision-vision-content .mision-texto {
+    padding-right: 1.6em;
+  }
   .accordion-header {
     width: 24em;
   }
   .accordion-body {
     width: auto;
+  }
+  .datos-producto {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 100px);
+    grid-template-areas: "marca" "modelo" "motivo" "mensaje" "botones" "botones";
+    gap: 10px;
+  }
+  .datos-producto input {
+    height: 50%;
+    width: 98%;
+  }
+  .datos-producto select {
+    width: 98%;
+  }
+  .datos-producto .mensaje {
+    width: 98%;
   }
 }
 @media (width < 570px) {
@@ -794,12 +858,32 @@ div select:focus-visible {
     font-size: 1.4em;
     font-weight: bold;
   }
+  .video-demo {
+    width: 80%;
+  }
+  .mision-vision-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
   .datos-producto {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 100px);
-    grid-template-areas: "marca" "modelo" "motivo" "mensaje" "enviar" "cancelar";
+    grid-template-areas: "marca" "modelo" "motivo" "mensaje" "botones" "botones";
     gap: 10px;
+  }
+  .datos-producto .form-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+  }
+  .datos-producto .input {
+    margin-bottom: 4em;
   }
 }
 .button, nav .btn-bg, .articulo .btn-bg, .tienda .producto1 .descripcion .btn-bg,
