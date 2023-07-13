@@ -1,0 +1,4 @@
+Useragent: *
+Disallow: /background/
+Disallow: /img/
+Disallow: /wireframes/
