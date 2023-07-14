@@ -9,6 +9,7 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="../style/main.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
 </head>
 <body>
     <!-- STARTS NAVBAR -->
@@ -129,7 +130,7 @@
         <!-- filters ends -->
         <img src="../img/imagen-tienda.webp" class="guitarra-tienda d-none d-lg-block" alt="guitarra criolla sobre pared de madera">
         <!-- starts productos -->
-        <section class="container producto1">
+        <section class="container producto1" data-aos="fade-right">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/epiphone/archtop.webp" class="card-img-top w-25 my-3" alt="Epihone acrchtop">
                 <div class="card-body  descripcion">
@@ -142,7 +143,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto2">
+        <section class="container producto2" data-aos="fade-left">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/epiphone/explorer.webp" class="card-img-top w-25 my-3" alt="Guitarra eléctrica Epiphone Original Collection Explorer designer de caoba ebony brillante con diapasón de laurel indio">
                 <div class="card-body  descripcion">
@@ -155,7 +156,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto3">
+        <section class="container producto3" data-aos="fade-right">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/cort/cort-criolla.webp" class="card-img-top w-25 my-3" alt="Guitarra Clásica Criolla Cort Ac150-ns Con Funda">
                 <div class="card-body  descripcion">
@@ -168,7 +169,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto4">
+        <section class="container producto4" data-aos="fade-left">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/schecter/schecter-demon.webp" class="card-img-top w-25 my-3" alt="Guitarra eléctrica Schecter Demon Series Demon-6 de tilo aged black satin con diapasón de wengué">
                 <div class="card-body  descripcion">
@@ -181,7 +182,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto5">
+        <section class="container producto5" data-aos="fade-right">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/teclados/controlador-midi-.webp" class="card-img-top w-25 my-3" alt="Teclado Midi Usb Novation Launchkey 25 Mk3 Controlador">
                 <div class="card-body descripcion">
@@ -194,7 +195,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto6">
+        <section class="container producto6" data-aos="fade-left">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/epiphone/les-paul.webp" class="card-img-top w-25 my-3" alt="Guitarra eléctrica Epiphone Les Paul Studio LT de caoba violin sunburst con diapasón de palo de rosa">
                 <div class="card-body descripcion">
@@ -207,7 +208,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto7">
+        <section class="container producto7" data-aos="fade-right">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/bajos/bass-squier.webp" class="card-img-top w-25 my-3" alt="Bajo Eléctrico Squier Affinity Precision Pj Racing Red">
                 <div class="card-body descripcion">
@@ -220,7 +221,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto8">
+        <section class="container producto8" data-aos="fade-left">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/squier/squier-telecaster.webp" class="card-img-top w-25 my-3" alt="Guitarra eléctrica Squier Bullet Telecaster de álamo black poliuretano brillante con diapasón de laurel indio">
                 <div class="card-body descripcion">
@@ -233,7 +234,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto9">
+        <section class="container producto9" data-aos="fade-right">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/teclados/casio-ctk.webp" class="card-img-top w-25 my-3" alt="Teclado musical Casio CTK-3500 61 teclas negro">
                 <div class="card-body descripcion">
@@ -246,7 +247,7 @@
                 </div>
             </div>
         </section>
-        <section class="container producto10">
+        <section class="container producto10" data-aos="fade-left">
             <div class="card section-bg m-auto d-flex">
                 <img src="../img/epiphone/sg-blanca.webp" class="card-img-top w-25 my-3" alt="Guitarra eléctrica Epiphone Modern SG SG Muse de caoba purple passion metallic metalizado con diapasón de laurel indio">
                 <div class="card-body descripcion">
@@ -280,5 +281,9 @@
         <a href="../pages/contacto.html" class="footer-link"><div>Contacto</div></a>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
 </body>
 </html>
