@@ -12,6 +12,8 @@ body {
     background-attachment: fixed;
 }
 
+
+
 .textContent{
     font-size: $textoMd;
     font-weight: bold;
@@ -28,6 +30,7 @@ body {
 }
 
 footer{
+    padding: 2em 0;
     background-color: map-get($map: $colores, $key: "cinco" );
     text-align: center;
     @include flex(column, center, center, nowrap);
@@ -35,7 +38,8 @@ footer{
         @include sizes(8%, 8%);
         margin: 0 10px;
         padding-right: 8px;
-        fill: map-get($map: $colores, $key: "dos" )
+        fill: map-get($map: $colores, $key: "dos" );
+        padding: 1.2em;
     }
     .footer-link{
         margin: 0 10px;

@@ -1,0 +1,40 @@
+.not-found{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(49, 49, 49, 1));
+    @include flex(column, center, center, nowrap);
+    .error-container{
+        .broken-guitar{
+            width: 50%;
+            height: auto;
+        }
+        @include flex(column, center, center, nowrap);
+        .error{
+            @include flex(column, center, center, nowrap);
+            .error-titulo{
+                font-size: 8em;
+                margin: 0;
+                color: map-get($map: $colores, $key: "ocho" );
+            }
+            .error-texto{
+                font-size: $textoXxxl;
+                color: map-get($map: $colores, $key: "ocho" );
+                margin: 0;
+            }
+        }
+    }
+    .regreso{
+        .regreso-texto{
+            background-color: map-get($map: $colores, $key: "cincoA" );
+            border: $noBorder;
+            border-radius: 5px;
+            margin-top: 2em;
+            padding: 1em;
+            font-size: $textoLg;
+            color: map-get($map: $colores, $key: "uno" );
+            &:hover{
+                background-color: map-get($map: $colores, $key: "ocho" );
+                color: map-get($map: $colores, $key: "dos" );
+                cursor: pointer;
+            }
+        }
+    }
+}

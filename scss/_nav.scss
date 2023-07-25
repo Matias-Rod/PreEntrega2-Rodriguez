@@ -13,6 +13,15 @@ nav{
         border: $border1;
     }
     .btn-bg{
-        @extend .button
+        @extend .button;
+        a{
+            color: map-get($map: $colores, $key: "uno" );
+            &:link{
+                text-decoration: none;
+            }
+            &:hover{
+                color: map-get($map: $colores, $key: "dos" );
+            }
+        }
     }
 }

@@ -32,7 +32,7 @@ main{
     width: 70%;
     margin-bottom: 4em;
     margin-left: 4em;
-    background-color: map-get($map: $colores, $key: "cuatro" );
+    background-color: map-get($map: $colores, $key: "dos" );
     border-radius: 5px;
     .accordion-item{
         background-color: map-get($map: $colores, $key: "once" );
@@ -42,11 +42,18 @@ main{
         @include sizes (3em, 30em);
         margin: 0 auto;
         background-color: map-get($map: $colores, $key: "once" );
+        
     }
     .accordion-button{
         font-size: $textoXsm;
         background-color: map-get($map: $colores, $key: "once" );
         color: map-get($map: $colores, $key: "uno" );
+        &::before{
+            background-attachment: map-get($map: $colores, $key: "uno" );
+        }
+        &::after{
+            background-color: map-get($map: $colores, $key: "uno" );
+        }
         &:first-of-type{
             text-align: center;
         }
@@ -64,8 +71,8 @@ main{
         }
     }
     .accordion-body{
+        background-color: map-get($map: $colores, $key: "once" );
         h3{
-            background-color: map-get($map: $colores, $key: "once" );
             color: map-get($map: $colores, $key: "uno" );
             text-align: center;
         }

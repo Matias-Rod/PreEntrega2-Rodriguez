@@ -30,6 +30,7 @@ body {
 }
 
 footer {
+  padding: 2em 0;
   background-color: rgb(125, 125, 128);
   text-align: center;
   display: flex;
@@ -44,6 +45,7 @@ footer svg {
   margin: 0 10px;
   padding-right: 8px;
   fill: rgb(49, 49, 49);
+  padding: 1.2em;
 }
 footer .footer-link {
   margin: 0 10px;
@@ -66,6 +68,16 @@ nav ul li:hover {
 nav .nav-toogler {
   border: 2px rgb(34, 34, 34) solid;
 }
+nav .btn-bg a {
+  color: rgb(219, 219, 219);
+}
+nav .btn-bg a:link {
+  text-decoration: none;
+}
+nav .btn-bg a:hover {
+  color: rgb(49, 49, 49);
+}
+
 .color-slide {
   background-color: rgb(49, 49, 49);
 }
@@ -120,7 +132,7 @@ div .destacados {
   align-items: center;
   flex-wrap: nowrap;
   width: 100%;
-  background-color: rgba(56, 49, 49, 0.2);
+  background-color: rgb(49, 49, 49);
   margin-bottom: 1em;
 }
 .video-cita .cita {
@@ -129,10 +141,11 @@ div .destacados {
   justify-content: center;
   align-items: center;
   flex-wrap: nowrap;
+  color: rgb(219, 219, 219);
 }
 .video-cita .cita::before {
   content: "“";
-  color: rgb(56, 49, 49);
+  color: rgb(219, 219, 219);
   font-size: 5em;
   position: relative;
   left: -36%;
@@ -486,7 +499,7 @@ main .how-to-buy h1, main .how-to-buy p {
   width: 70%;
   margin-bottom: 4em;
   margin-left: 4em;
-  background-color: rgb(100, 99, 99);
+  background-color: rgb(49, 49, 49);
   border-radius: 5px;
 }
 .accordion .accordion-item {
@@ -508,6 +521,12 @@ main .how-to-buy h1, main .how-to-buy p {
   background-color: rgba(49, 49, 49, 0.5);
   color: rgb(219, 219, 219);
 }
+.accordion .accordion-button::before {
+  background-attachment: rgb(219, 219, 219);
+}
+.accordion .accordion-button::after {
+  background-color: rgb(219, 219, 219);
+}
 .accordion .accordion-button:first-of-type {
   text-align: center;
 }
@@ -523,8 +542,10 @@ main .how-to-buy h1, main .how-to-buy p {
   background-color: rgba(49, 49, 49, 0.5);
   color: rgb(213, 213, 230);
 }
-.accordion .accordion-body h3 {
+.accordion .accordion-body {
   background-color: rgba(49, 49, 49, 0.5);
+}
+.accordion .accordion-body h3 {
   color: rgb(219, 219, 219);
   text-align: center;
 }
@@ -911,6 +932,57 @@ div select:focus-visible {
 .tienda .producto10 .descripcion .btn-bg:hover {
   background-color: rgb(213, 213, 230);
   color: rgb(49, 49, 49);
+}
+
+.not-found {
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgb(49, 49, 49));
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.not-found .error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.not-found .error-container .broken-guitar {
+  width: 50%;
+  height: auto;
+}
+.not-found .error-container .error {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+.not-found .error-container .error .error-titulo {
+  font-size: 8em;
+  margin: 0;
+  color: rgb(213, 213, 230);
+}
+.not-found .error-container .error .error-texto {
+  font-size: 3em;
+  color: rgb(213, 213, 230);
+  margin: 0;
+}
+.not-found .regreso .regreso-texto {
+  background-color: rgba(125, 125, 128, 0.37);
+  border: none;
+  border-radius: 5px;
+  margin-top: 2em;
+  padding: 1em;
+  font-size: 1.8em;
+  color: rgb(219, 219, 219);
+}
+.not-found .regreso .regreso-texto:hover {
+  background-color: rgb(213, 213, 230);
+  color: rgb(49, 49, 49);
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=main.css.map */
