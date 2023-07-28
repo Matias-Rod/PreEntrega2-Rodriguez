@@ -11,6 +11,9 @@
 
 @media (width < 880px){
     nav{
+        .logo{
+            width: 25vw;
+        }
         form{
             input{
                 display: none;
@@ -33,10 +36,15 @@
         .cita{
             .cita-texto{
                 padding-right: 2.4em;
+                font-size: $textoMd;
+            }
+            .cita-autor{
+                font-size: $textoSm;
             }
         }
         .video-demo{
-            width: 60%;
+            width: 80vw;
+            height: 40vh;
         }
     }
     .bienvenida{
@@ -143,6 +151,9 @@
     .video-demo{
         width: 70%;
     }
+    .texto-bienvenida{
+        font-size: $textoXsm;
+    }
 
     // INDEX ENDS
 
@@ -186,12 +197,23 @@
 }
 
 @media (width < 570px){
-    .descripcion-articulo{
-        font-size: $textoMd;
-        font-weight: $textBold;
+    nav{
+        a{
+            .logo{
+                width: 30vw;
+            }
+        }
+    }
+    .card-body{
+        width: 80vw;
+        .descripcion-articulo{
+            font-size: $textoSm;
+            font-weight: $textBold;
+        }
     }
     .video-demo{
-        width: 80%;
+        width: 50vw;
+        height: 50vh;
     }
     // INDEX ENDS
 

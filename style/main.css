@@ -40,12 +40,12 @@ footer {
   flex-wrap: nowrap;
 }
 footer svg {
-  height: 8%;
-  width: 8%;
+  height: 10vh;
+  width: 10vw;
   margin: 0 10px;
   padding-right: 8px;
   fill: rgb(49, 49, 49);
-  padding: 1.2em;
+  padding: 1em 0;
 }
 footer .footer-link {
   margin: 0 10px;
@@ -57,6 +57,9 @@ footer .footer-link {
 
 nav {
   background-color: rgb(125, 125, 128);
+}
+nav .logo {
+  width: 75%;
 }
 nav ul li {
   font-size: 1.8em;
@@ -181,7 +184,6 @@ div .destacados {
   margin-bottom: 1.4em;
   font-weight: bold;
 }
-
 .actions {
   display: flex;
   flex-direction: row;
@@ -495,8 +497,9 @@ main .how-to-buy h1, main .how-to-buy p {
 }
 
 .accordion {
-  height: 60vh;
+  height: 65vh;
   width: 70%;
+  padding-top: 1.4em;
   margin-bottom: 4em;
   margin-left: 4em;
   background-color: rgb(49, 49, 49);
@@ -517,7 +520,7 @@ main .how-to-buy h1, main .how-to-buy p {
   background-color: rgba(49, 49, 49, 0.5);
 }
 .accordion .accordion-button {
-  font-size: 0.6em;
+  font-size: 0.8em;
   background-color: rgba(49, 49, 49, 0.5);
   color: rgb(219, 219, 219);
 }
@@ -721,6 +724,9 @@ div select:focus-visible {
   }
 }
 @media (width < 880px) {
+  nav .logo {
+    width: 25vw;
+  }
   nav form input {
     display: none;
   }
@@ -746,9 +752,14 @@ div select:focus-visible {
   }
   .video-cita .cita .cita-texto {
     padding-right: 2.4em;
+    font-size: 1.4em;
+  }
+  .video-cita .cita .cita-autor {
+    font-size: 1.2em;
   }
   .video-cita .video-demo {
-    width: 60%;
+    width: 80vw;
+    height: 40vh;
   }
   .bienvenida {
     width: 90%;
@@ -833,6 +844,9 @@ div select:focus-visible {
   .video-demo {
     width: 70%;
   }
+  .texto-bienvenida {
+    font-size: 0.8em;
+  }
   .mision-vision {
     display: flex;
     flex-direction: column;
@@ -875,12 +889,19 @@ div select:focus-visible {
   }
 }
 @media (width < 570px) {
-  .descripcion-articulo {
-    font-size: 1.4em;
+  nav a .logo {
+    width: 30vw;
+  }
+  .card-body {
+    width: 80vw;
+  }
+  .card-body .descripcion-articulo {
+    font-size: 1.2em;
     font-weight: bold;
   }
   .video-demo {
-    width: 80%;
+    width: 50vw;
+    height: 50vh;
   }
   .mision-vision-content {
     display: flex;

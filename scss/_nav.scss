@@ -1,5 +1,8 @@
 nav{
     background-color: map-get($map: $colores, $key: "cinco" );
+    .logo{
+        width: 75%;
+    }
     ul{
         li{font-size: $textoLg;
             &:hover{

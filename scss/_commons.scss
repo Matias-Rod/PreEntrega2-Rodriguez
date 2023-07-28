@@ -35,11 +35,11 @@ footer{
     text-align: center;
     @include flex(column, center, center, nowrap);
     svg{
-        @include sizes(8%, 8%);
+        @include sizes(10vh, 10vw);
         margin: 0 10px;
         padding-right: 8px;
         fill: map-get($map: $colores, $key: "dos" );
-        padding: 1.2em;
+        padding: 1em 0;
     }
     .footer-link{
         margin: 0 10px;
